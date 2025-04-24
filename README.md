@@ -1,31 +1,3 @@
-# Project Title
-
-## Description
-
-This is a test project.
-
-### Features
-
-- Feature 1
-- Feature 2
-- Feature 3
-
-##Installation
-`npm install`
-
-## Usage
-
-Just run the following command:
-
-```bash
-npm   start
-```
-
-### Notes
-
-- Note 1
-- Note 2
-
 # sdu24.by
 
 A simple informational website for the SDU24 project, developed and maintained by Alexey Yakovlev.
@@ -52,8 +24,12 @@ A simple informational website for the SDU24 project, developed and maintained b
    git clone https://github.com/sdu24by/sdu24.by.git
    cd sdu24.by
    ```
-2. Setup SCSS compiler
+2. Setup node dependencies
+   ```bash
+   npm i
+   ```
 3. Change some code)
+4. While commit use terms of commit message best practices!
 
 ## Usage
 
