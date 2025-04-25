@@ -3,6 +3,9 @@ body {
   --bg-color: #333333;
   --section-color: #f2f2f2;
   --text-color: #000;
+  --text-color-inverted: #f2f2f2;
+  --service-bg: #000;
+  --service-color: var(--main-color);
   --static-text-color: #f2f2f2;
   --backdrop: rgb(0 0 0 / 40%);
   --black: #000;
@@ -11,12 +14,16 @@ body {
     --section-color: #f2f2f2;
     --text-color: #000;
     --text-color-inverted: #f2f2f2;
+    --service-bg: #000;
+    --service-color: var(--main-color);
   }
 
   &.dark {
-    --section-color: #4d4d4d;
+    --section-color: #0d0808;
     --text-color: #f2f2f2;
     --text-color-inverted: #000;
+    --service-bg: var(--main-color);
+    --service-color: var(--black);
   }
 
   &.fixed {
