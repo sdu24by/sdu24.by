@@ -1,5 +1,25 @@
 .header {
   &__wrapper {
-    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-item {
+      &-ul {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 30px;
+        list-style: none;
+      }
+      &-li {
+        text-decoration: none;
+      }
+      &-link {
+        font-weight: 300;
+        text-transform: uppercase;
+        color: var(--main-color);
+      }
+    }
   }
 }
