@@ -1,7 +1,9 @@
 .heading {
   min-height: 581px;
+  //remove addition sdu24.by whe upload to hosting! this for github pages!
   background-image:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('/images/background/heading-bg.jpg');
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
+    url('./sdu24.by/images/background/heading-bg.jpg');
   background-attachment: scroll, fixed;
   background-position: 50%;
   background-repeat: no-repeat;
