@@ -1,4 +1,4 @@
-@use './../node_modules/normalize.css/normalize.css';
+@use './../node_modules/normalize.css/normalize';
 
 @use 'base/base';
 @use 'assets/assets';
@@ -7,7 +7,9 @@
 
 @use 'blocks/header';
 @use 'blocks/heading';
+@use 'blocks/services';
 @use 'blocks/carousel';
+@use 'blocks/about';
 @use 'blocks/footer';
 
 @use 'media/media';
