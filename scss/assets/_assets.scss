@@ -1,0 +1,46 @@
+body {
+  --main-color: #ebc181;
+  --bg-color: #333333;
+  --section-color: #f2f2f2;
+  --text-color: #000;
+  --static-text-color: #f2f2f2;
+  --backdrop: rgb(0 0 0 / 40%);
+  --black: #000;
+
+  &.light {
+    --section-color: #f2f2f2;
+    --text-color: #000;
+    --text-color-inverted: #f2f2f2;
+  }
+
+  &.dark {
+    --section-color: #4d4d4d;
+    --text-color: #f2f2f2;
+    --text-color-inverted: #000;
+  }
+
+  &.fixed {
+    overflow: hidden;
+  }
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+
+  span {
+    display: none;
+  }
+}
+
+.link {
+  cursor: pointer;
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
