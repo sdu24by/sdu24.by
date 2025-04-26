@@ -4,5 +4,55 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 100px;
+
+    &__items {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      grid-auto-rows: 1fr;
+      align-items: center;
+
+      &-item {
+        display: flex;
+
+        &:nth-child(2n) {
+          flex-direction: row-reverse;
+          .about__wrapper__items-item-text {
+            padding: 30px 90px 30px 30px;
+          }
+        }
+        &-text {
+          padding: 30px 90px 30px 0;
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+
+          &-header {
+            text-align: left;
+            font-weight: 600;
+            font-size: 24px;
+          }
+          &-description {
+            text-align: left;
+            font-weight: 300;
+            line-height: 30px;
+          }
+        }
+
+        &-img {
+          width: 50%;
+          height: 400px;
+          overflow: hidden;
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
   }
 }
