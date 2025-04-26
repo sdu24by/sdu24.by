@@ -14,7 +14,7 @@
     &__items {
       display: flex;
       gap: 40px;
-      justify-content: space-evenly;
+      justify-content: space-between;
       flex-wrap: wrap;
 
       &-item {
@@ -25,12 +25,16 @@
         flex-wrap: nowrap;
         text-align: left;
         list-style: none;
+        a {
+          color: var(--text-color-inverted);
+        }
         &-header {
           height: 2em;
           margin-bottom: 16px;
           h3 {
             text-align: left;
             font-weight: 500;
+            font-size: 16px;
           }
           color: var(--main-color);
         }
@@ -38,13 +42,18 @@
           color: var(--text-color-inverted);
           line-height: 28px;
           text-align: left;
+          font-size: 16px;
           font-weight: 200;
+        }
+        &-address {
+          margin-left: 16px;
+          list-style: disc;
         }
       }
     }
 
     &__copyright {
-      font-size: 16px;
+      font-size: 12px;
       font-weight: 400;
       color: var(--text-color-inverted);
       text-align: left;
