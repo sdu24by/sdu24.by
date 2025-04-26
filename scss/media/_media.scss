@@ -69,7 +69,6 @@
   }
   .header {
     &__wrapper {
-      height: 15dvh;
       &-item {
         &-nav {
           background: var(--section-color);
@@ -95,8 +94,6 @@
     }
   }
   .heading {
-    min-height: unset;
-    height: 85dvh;
     &__wrapper {
       &-header {
         font-size: 15px;
