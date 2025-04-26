@@ -9,6 +9,31 @@
       }
     }
   }
+  .about {
+    &__wrapper {
+      &__items {
+        &-item {
+          &:nth-child(2n) {
+            .about__wrapper__items-item-text {
+              padding: 20px 70px 20px 20px;
+            }
+          }
+
+          &-text {
+            padding: 20px 70px 20px 0;
+
+            &-header {
+              font-size: 21px;
+            }
+
+            &-description {
+              line-height: 28px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (width <= 992px) {
@@ -35,6 +60,37 @@
       }
     }
   }
+  .about {
+    &__wrapper {
+      gap: 80px;
+
+      &__items {
+        &-item {
+          &:nth-child(2n) {
+            .about__wrapper__items-item-text {
+              padding: 20px 20px 20px 20px;
+            }
+          }
+
+          &-text {
+            padding: 20px 20px 20px 0;
+
+            &-header {
+              font-size: 20px;
+            }
+
+            &-description {
+              line-height: 28px;
+            }
+          }
+
+          &-img {
+            height: 500px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (width <= 768px) {
@@ -54,6 +110,44 @@
 
       &__items {
         grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+  .about {
+    &__wrapper {
+      gap: 50px;
+
+      &__items {
+        &-item {
+          position: relative;
+
+          &:nth-child(2n) {
+            .about__wrapper__items-item-text {
+              padding: 20px 20px 20px 10px;
+            }
+
+            &::after {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: calc(100% - 4px);
+              width: 100%;
+              border-top: 2px solid var(--main-color);
+              border-bottom: 2px solid var(--main-color);
+              z-index: 10;
+            }
+          }
+
+          &-text {
+            width: 65%;
+            padding: 20px 10px 20px 0;
+          }
+
+          &-img {
+            width: 35%;
+          }
+        }
       }
     }
   }
@@ -80,14 +174,17 @@
           //todo: replace this when realise hamburger menu
           display: none;
         }
+
         &-ul {
           flex-direction: column;
           justify-content: center;
         }
+
         &-link {
           color: var(--text-color);
         }
       }
+
       &-hamburger {
         display: flex;
       }
@@ -114,11 +211,13 @@
           &-img {
             width: 70px;
             height: 70px;
+
             img {
               max-height: 40px;
               max-width: 40px;
             }
           }
+
           &-text {
             font-size: 14px;
           }
@@ -126,9 +225,97 @@
       }
     }
   }
+  .about {
+    &__wrapper {
+      &__items {
+        &-item {
+          &-text {
+            width: 70%;
+
+            &-header {
+              font-size: 20px;
+            }
+
+            &-description {
+              font-size: 16px;
+              line-height: 22px;
+            }
+          }
+
+          &-img {
+            width: 30%;
+            height: 450px;
+          }
+        }
+      }
+    }
+  }
 }
+
+@media (width <= 440px) {
+  .title {
+    font-size: 26px;
+  }
+  .about {
+    &__wrapper {
+      &__items {
+        &-item {
+          &-text {
+            width: 80%;
+
+            &-header {
+              font-size: 20px;
+            }
+
+            &-description {
+              font-size: 16px;
+              line-height: 22px;
+            }
+          }
+
+          &-img {
+            width: 20%;
+            height: 470px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (width <= 380px) {
   .title {
     font-size: 26px;
+  }
+  .about {
+    &__wrapper {
+      &__items {
+        &-item {
+          &:nth-child(2n) {
+            .about__wrapper__items-item-text {
+              padding: 10px 10px 10px 10px;
+            }
+          }
+
+          &-text {
+            padding: 10px 10px 10px 0;
+            gap: 20px;
+
+            &-header {
+              font-size: 18px;
+            }
+
+            &-description {
+              font-size: 14px;
+              line-height: 18px;
+            }
+          }
+
+          &-img {
+            height: 420px;
+          }
+        }
+      }
+    }
   }
 }
