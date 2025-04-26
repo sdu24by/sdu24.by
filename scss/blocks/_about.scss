@@ -10,17 +10,16 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(3, 1fr);
+      gap: 60px;
       grid-auto-rows: 1fr;
       align-items: center;
 
       &-item {
         display: flex;
+        gap: 60px;
 
         &:nth-child(2n) {
           flex-direction: row-reverse;
-          .about__wrapper__items-item-text {
-            padding: 30px 90px 30px 30px;
-          }
         }
         &-text {
           padding: 30px 90px 30px 0;
@@ -32,10 +31,12 @@
           &-header {
             text-align: left;
             font-weight: 600;
-            font-size: 24px;
+            font-size: 20px;
+            line-height: 26px;
           }
           &-description {
             text-align: left;
+            font-size: 16px;
             font-weight: 300;
             line-height: 30px;
           }
@@ -43,7 +44,7 @@
 
         &-img {
           width: 50%;
-          height: 400px;
+          height: 380px;
           overflow: hidden;
           img {
             display: block;
