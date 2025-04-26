@@ -1,7 +1,10 @@
 .heading {
   height: calc(100dvh - 80px);
   position: relative;
-  background-image: url('/images/background/heading-bg.jpg');
+  //todo: uncommit this when push project to hosting
+  //background-image: url('/images/background/heading-bg.jpg');
+  // and remove row under:
+  background-image: url('../images/background/heading-bg.jpg');
   background-size: cover;
   background-position: center;
 
