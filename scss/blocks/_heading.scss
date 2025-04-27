@@ -38,4 +38,50 @@
       }
     }
   }
+
+  &__arrow {
+    display: block;
+
+    width: 50px;
+    height: 50px;
+
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
+    transform: translateX(50%);
+
+    cursor: pointer;
+
+    animation: 1.5s infinite ease-in-out loop;
+
+    svg {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(90deg);
+      height: 30px;
+      path {
+        fill: var(--service-color);
+      }
+    }
+
+    &:hover {
+      svg {
+        path {
+          fill: var(--service-bg);
+        }
+      }
+    }
+    z-index: 10;
+  }
+}
+
+@keyframes loop {
+  0%,
+  100% {
+    transform: translateX(50%) translateY(0);
+  }
+  50% {
+    transform: translateX(50%) translateY(-15px);
+  }
 }

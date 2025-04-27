@@ -14,8 +14,43 @@
     <link rel="manifest" href="icons/favicon/site.webmanifest" />
 
     <!--  мета теги нужно создать новые-->
-    <meta name="title" content="Строительно-Демонтажное Управление" />
-    <meta name="description" content="Строительно-Демонтажное Управление" />
+    <meta name="title" content="Строительно-Демонтажные работы | Аренда техники | Продажа щебня и грунта | СДУ" />
+    <meta
+      name="description"
+      content="Профессиональные строительно-демонтажные работы, аренда спецтехники CAT, продажа щебня и грунта в Орше. Работаем по Беларуси. Гарантия качества и сроков!"
+    />
+
+    <!-- Schema.org-->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ООО \"Строительно-Демонтажное Управление\"",
+        "url": "https://sdu24.by",
+        "logo": "https://sdu24.by/icons/favicon/favicon.svg",
+        "description": "Профессиональные строительно-демонтажные работы и аренда спецтехники в Орше",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ул. Минская 17/1",
+          "addressLocality": "Орша",
+          "addressCountry": "BY"
+        },
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+375292971111",
+            "contactType": "Аренда техники",
+            "areaServed": "BY"
+          },
+          {
+            "@type": "ContactPoint",
+            "telephone": "+375295313502",
+            "contactType": "Продажа щебня",
+            "areaServed": "BY"
+          }
+        ]
+      }
+    </script>
 
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
@@ -55,6 +90,11 @@
             <div class="heading__wrapper-subheader">
               <h2>Безопасный демонтаж для новых возможностей</h2>
             </div>
+          </div>
+          <div class="heading__arrow">
+            <svg viewBox="0 0 5 9">
+              <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+            </svg>
           </div>
         </div>
       </section>
@@ -163,12 +203,16 @@
           </div>
         </div>
       </section>
+      <span class="pageUp hidden">
+        <svg viewBox="0 0 5 9">
+          <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+        </svg>
+      </span>
     </main>
     <footer class="footer" id="contacts">
       <div class="container">
         <div class="footer__wrapper">
           <h2 class="footer__wrapper__title title">Контакты</h2>
-          <!--todo: replace li with anchors!-->
           <div class="footer__wrapper__items">
             <ul class="footer__wrapper__items-item">
               <li class="footer__wrapper__items-item-header">
@@ -209,17 +253,23 @@
                 <h3>Расположение офиса</h3>
               </li>
               <li class="footer__wrapper__items-item-text footer__wrapper__items-item-address">
-                <b>Главный офис:</b> г. Орша, <br />ул. Минская 17/1
+                <a href="https://yandex.by/maps/-/CHfCfMLb" target="_blank">
+                  <b>Главный офис:</b> г. Орша, <br />ул. Минская 17/1
+                </a>
               </li>
               <li class="footer__wrapper__items-item-text footer__wrapper__items-item-address">
-                <b>Почтовый адрес:</b> г. Орша, <br />ул. Вл. Ленина 46, а/я № 17
+                <a href="https://yandex.by/maps/-/CHfCf8~y">
+                  <b>Почтовый адрес:</b> г. Орша, <br />ул. Вл. Ленина 46, а/я № 17
+                </a>
               </li>
             </ul>
           </div>
-          <!--todo: replace with js-->
-          <h2 class="footer__wrapper__copyright">© 2025 ООО "Строительно-Демонтажное Управление"</h2>
+          <h2 class="footer__wrapper__copyright">
+            © <span class="footer__wrapper__copyright" id="year"></span> ООО "Строительно-Демонтажное Управление"
+          </h2>
         </div>
       </div>
     </footer>
+    <script src="js/index.js"></script>
   </body>
 </html>

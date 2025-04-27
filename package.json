@@ -2,7 +2,7 @@
   "name": "sdu24",
   "version": "1.0.0",
   "description": "A simple informational website for the SDU24 project, developed and maintained by Alexey Yakovlev.",
-  "main": "index.js",
+  "main": "js/index.js",
   "scripts": {
     "styles": "sass scss/style.scss css/style.min.css --style compressed",
     "styles:staged": "sass scss/style.scss css/style.min.css --style compressed && git add css/style.min.css css/style.min.css.map",
