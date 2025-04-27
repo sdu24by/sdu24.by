@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /scss
+
+Sitemap: https://sdu24.by/sitemap.xml
