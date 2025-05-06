@@ -27,9 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
     HAMBURGER.classList.toggle('active');
     document.body.classList.toggle('fixed');
   };
+
   NAV.onclick = function () {
     NAV.classList.toggle('active');
     HAMBURGER.classList.toggle('active');
-    document.body.classList.toggle('fixed');
+    if (window.innerWidth <= 576) {
+      document.body.classList.toggle('fixed');
+    }
   };
 });
